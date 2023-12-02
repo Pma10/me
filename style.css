@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Gasoek+One&family=Roboto:ital,wght@0,900;1,900&family=Vina+Sans&display=swap');
+.main-div{
+    background-color: #5DA8D3;
+    width: 100%;
+    height: 200vh;
+    border-radius: 10px;
+    animation-name:main-div-load;
+    border: 1px solid black;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+    box-shadow: 1px 1px 2px 2px gray;
+    font-size: 20px;
+}
+body{
+    background-color: #2E6C90;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color:gray;
+}
+@keyframes main-div-load {
+    from{transform: scale(0,0)}
+}
+.nav-div{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    text-decoration: none;
+    margin-right: 4px;
+    font-family: 'Vina Sans', sans-serif;
+}
+.div-hr{
+    color: #5DD3C3;
+}
+.nav-icon{
+    margin-right: 90px;
+}
+.nav {
+    position: sticky;
+    top: 0;
+    background-color: #5DA8D3;
+    z-index: 100;
+}
+.aboutme-div{
+    text-align: center;
+}
+#aboutme-tag {
+    padding-top: 100px;
+}
+.contact-div{
+    text-align: center;
+}
+#contact-tag{
+    margin-top: 150px;
+    padding-top: 100px;
+}
+html {
+    scroll-behavior: smooth;
+  }
