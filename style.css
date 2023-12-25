@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'pretendard';
+    font-style: normal;
+    font-weight: 900;
+    src: url("files/fonts/Pretendard-ExtraBold.woff");
+}
+
+
+@keyframes blowup {
+    from{
+        transform: scale(1,1);
+    }
+    to{
+        transform: scale(1.5,1.5);
+    }
+}
+@keyframes blowdown {
+    from{
+        transform: scale(1.5,1.5);
+    }
+    to{
+        transform: scale(1,1);
+    }
+}
+@keyframes main-div-load {
+    from{transform: scale(0,0)}
+}
+
+body {
+    font-family: 'pretendard';
+    background-color: #7ca7cf;
+}
+.body-div{
+    background-color: #8eadca;
+    height: 96vh;
+    border-radius: 10px;
+    animation-name:main-div-load;
+    border: 1px solid black;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+}
+.user-profile {
+    border-radius: 0.4rem;
+    width: 6rem;
+}
+.aboutme{
+    margin-top: 40px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.nav-ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-ul li {
+    margin-right: 40px;
+    font-size: 2.5rem;
+}
+
+.nav-ul li p {
+    margin-top: 20px;
+}
+
+.info-div {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 25px;
+}
+
+.info-div button {
+    width: 15rem;
+    height: 3rem;
+    border-style: none;
+    border-radius: 5px;
+    background-color: #FFC75F;
+}
+
+.info-div button:not(:hover) {
+    animation-name: blowdown;
+    animation-duration: 1s;
+}
+
+.info-div button:hover {
+    background-color: #c99e4f;
+    animation-name: blowup;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
