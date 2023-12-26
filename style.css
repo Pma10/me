@@ -22,9 +22,6 @@
         transform: scale(1,1);
     }
 }
-@keyframes main-div-load {
-    from{transform: scale(0,0)}
-}
 
 body {
     font-family: 'pretendard';
@@ -34,11 +31,7 @@ body {
     background-color: #8eadca;
     height: 96vh;
     border-radius: 10px;
-    animation-name:main-div-load;
-    border: 1px solid black;
-    animation-duration: 2s;
-    animation-delay: 1s;
-    animation-fill-mode: both;
+
 }
 .user-profile {
     border-radius: 0.4rem;
